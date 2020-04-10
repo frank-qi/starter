@@ -1,0 +1,25 @@
+# This is Git's per-user configuration file.
+[push]
+	# saves from having to run this command for a new branch
+	# replaces this command git push -u origin HEAD
+	default = current
+[user]
+	name = Frank Qi
+	email = dev@frankqi.ca
+	# Prompts git to always ask for name and email when you commit to a new repo instead of guessing
+	#useConfigOnly = true
+
+[alias]
+	fe = fetch --all --tags -p
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit -10
+	plog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative
+	co = checkout
+	br = branch -avv
+	ci = commit
+	st = status
+	rb = rebase
+[credential]
+	# Use the windows credentials manager instead of just storing it in ~/.git-credentials
+	# helper = manager
+	# Applies credentials at the path level instead of just at the domain level
+	# useHttpPath = true
