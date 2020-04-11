@@ -29,3 +29,4 @@ install discord
 install rider
 install datagrip
 install xmind-zen
+install iterm2
