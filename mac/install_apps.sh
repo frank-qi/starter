@@ -37,10 +37,13 @@ rm -rf fonts
 ## Powerlevel9k Zsh Theme ##
 brew tap sambadevi/powerlevel9k
 brew install powerlevel9k
+brew install zsh-syntax-highlighting
+echo "source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 
 install_cask_app datagrip
 install_cask_app discord
 install_cask_app google-chrome
+install_cask_app google-backup-and-sync
 install_cask_app iterm2
 install_cask_app rider
 install_cask_app slack
