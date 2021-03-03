@@ -5,7 +5,7 @@
 	default = current
 [user]
 	name = Frank Qi
-	email = dev@frankqi.ca
+	email = me@frankqi.ca
 	# Prompts git to always ask for name and email when you commit to a new repo instead of guessing
 	#useConfigOnly = true
 
