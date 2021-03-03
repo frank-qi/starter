@@ -8,7 +8,7 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -143,14 +143,19 @@ export SSH_KEY_NAME="board_rsa"
 export PATH="/opt/homebrew/bin:$PATH"
 
 ### Dictionary of useful commands
+###################################
 
 # Tells whether you're currently executing as arm or x86
 # uname -m
 
 # Tunnel test
 # nc -z localhost 3302 || echo 'no tunnel'
+###################################
 
+## Powerlevel10k
 source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 ## MUST BE THE LAST LINE OF ZSH ##
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
