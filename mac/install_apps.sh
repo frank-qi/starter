@@ -37,9 +37,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone https://github.com/powerline/fonts.git --depth=1
 bash fonts/install.sh
 rm -rf fonts
-## Powerlevel9k Zsh Theme ##
-brew tap sambadevi/powerlevel9k
-brew install powerlevel9k
+## Powerlevel10k Zsh Theme ##
+brew install romkatv/powerlevel10k/powerlevel10k
 brew install zsh-syntax-highlighting
 echo "source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 
