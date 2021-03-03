@@ -16,9 +16,8 @@ git clone https://github.com/powerline/fonts.git --depth=1
 bash fonts/install.sh
 rm -rf fonts
 
-## Powerlevel9k OhMyZsh Theme
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-sed -i '' 's|^ZSH_THEME.*$|ZSH_THEME="powerlevel9k/powerlevel9k"|g' ~/.zshrc
+## Powerlevel10k OhMyZsh Theme
+sed -i '' 's|^ZSH_THEME.*$|ZSH_THEME="powerlevel10k/powerlevel10k"|g' ~/.zshrc
 
 ## OhMyZsh Plugins
 sed -i '' 's|^plugins.*$|plugins=(git vi-mode)|g' ~/.zshrc
@@ -28,9 +27,13 @@ sed -i '' 's|^plugins.*$|plugins=(git vi-mode)|g' ~/.zshrc
 
 ## ~/.zshrc #
 # Silence/mute errors
-# Continues execution if ~/.inputrc is not found
+# Continues execution if ~/.zshrc is not found
 rm ~/.zshrc 2> /dev/null || true
 cp $parent_path/mac/configs/.zshrc ~/.zshrc
+
+## Zsh theme settings (aka powerlevel10k)
+rm ~/.p10k.zsh 2> /dev/null || true
+cp $parent_path/mac/configs/.p10k.zsh ~/.zshrc
 
 ## ~/.inputrc #
 rm ~/.inputrc 2> /dev/null || true
