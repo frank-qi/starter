@@ -30,17 +30,13 @@ if ! command -v python3 2>/dev/null; then
 	install_brew_app python3
 fi
 
+# Zsh (note: OhMyZsh is installed in the config install)
 install_brew_app zsh
-## OhMyZsh ##
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-## Powerline Fonts ##
-git clone https://github.com/powerline/fonts.git --depth=1
-bash fonts/install.sh
-rm -rf fonts
 ## Powerlevel10k Zsh Theme ##
 brew install romkatv/powerlevel10k/powerlevel10k
 brew install zsh-syntax-highlighting
 
+# Currently on Mar 3/2021 none of these formulaes have arm64 bottles
 install_cask_app datagrip
 install_cask_app discord
 install_cask_app google-chrome
