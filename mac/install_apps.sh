@@ -40,7 +40,6 @@ rm -rf fonts
 ## Powerlevel10k Zsh Theme ##
 brew install romkatv/powerlevel10k/powerlevel10k
 brew install zsh-syntax-highlighting
-echo "source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 
 install_cask_app datagrip
 install_cask_app discord
