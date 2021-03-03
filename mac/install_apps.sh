@@ -36,12 +36,21 @@ install_brew_app zsh
 brew install romkatv/powerlevel10k/powerlevel10k
 brew install zsh-syntax-highlighting
 
+# Download from webpage
+install_cask_app google-chrome
+
+# Google backup and sync m1 version
+# https://dl.google.com/drive/3.53.3471.0626/InstallBackupAndSync.dmg
+install_cask_app google-backup-and-sync
+
+# iTerm2 any version 3.4.4+ is compatible
+install_cask_app iterm2
+
 # Currently on Mar 3/2021 none of these formulaes have arm64 bottles
+# Check out this link for m1 compatibility status
+# https://isapplesiliconready.com/
 install_cask_app datagrip
 install_cask_app discord
-install_cask_app google-chrome
-install_cask_app google-backup-and-sync
-install_cask_app iterm2
 install_cask_app rider
 install_cask_app slack
 install_cask_app visual-studio-code
@@ -49,3 +58,8 @@ install_cask_app webex-meetings
 install_cask_app xmind-zen
 install_cask_app zoomus
 
+# App store installations
+# Xnip (Screenshot)
+# Mini Calendar (Calendar in menu bar)
+# CopyClip (Clipboard history)
+# Paste (Better clipboard history)
