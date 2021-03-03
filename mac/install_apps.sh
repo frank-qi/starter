@@ -26,7 +26,10 @@ if ! command -v brew 2>/dev/null; then
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
-install_brew_app python3
+if ! command -v python3 2>/dev/null; then
+	install_brew_app python3
+fi
+
 install_brew_app zsh
 ## OhMyZsh ##
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
