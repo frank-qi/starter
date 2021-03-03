@@ -142,5 +142,13 @@ export SSH_KEY_NAME="board_rsa"
 
 export PATH="/opt/homebrew/bin:$PATH"
 
+### Dictionary of useful commands
+
+# Tells whether you're currently executing as arm or x86
+# uname -m
+
+# Tunnel test
+# nc -z localhost 3302 || echo 'no tunnel'
+
 ## MUST BE THE LAST LINE OF ZSH ##
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
