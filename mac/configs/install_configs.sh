@@ -17,7 +17,9 @@ bash fonts/install.sh
 rm -rf fonts
 
 ## Powerlevel10k OhMyZsh Theme
-sed -i '' 's|^ZSH_THEME.*$|ZSH_THEME="powerlevel10k/powerlevel10k"|g' ~/.zshrc
+# This is the manual way
+# git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/powerlevel10k
+# sed -i '' 's|^ZSH_THEME.*$|ZSH_THEME="powerlevel10k/powerlevel10k"|g' ~/.zshrc
 
 ## OhMyZsh Plugins
 sed -i '' 's|^plugins.*$|plugins=(git vi-mode)|g' ~/.zshrc
