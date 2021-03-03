@@ -58,6 +58,9 @@ install_cask_app webex-meetings
 install_cask_app xmind-zen
 install_cask_app zoomus
 
+# For the M1 using a drastic amount of SSD for page swapping
+# brew install smartmontools && sudo smartctl --all /dev/disk0
+
 # App store installations
 # Xnip (Screenshot)
 # Mini Calendar (Calendar in menu bar)
