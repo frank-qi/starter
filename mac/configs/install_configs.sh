@@ -31,7 +31,6 @@ sed -i '' 's|^plugins.*$|plugins=(git vi-mode)|g' ~/.zshrc
 # Continues execution if ~/.inputrc is not found
 rm ~/.zshrc 2> /dev/null || true
 cp $parent_path/mac/configs/.zshrc ~/.zshrc
-echo "source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 
 ## ~/.inputrc #
 rm ~/.inputrc 2> /dev/null || true
