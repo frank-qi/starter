@@ -142,6 +142,10 @@ export SSH_KEY_NAME="board_rsa"
 
 export PATH="/opt/homebrew/bin:$PATH"
 
+# For zsh so that git branch/diff/stash will not force you to go into the pager
+# https://stackoverflow.com/a/60498979/1836776
+export LESS=-FRX
+
 ### Dictionary of useful commands
 ###################################
 
