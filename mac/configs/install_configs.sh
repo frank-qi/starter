@@ -37,6 +37,10 @@ cp $parent_path/mac/configs/.zshrc ~/.zshrc
 rm ~/.p10k.zsh 2> /dev/null || true
 cp $parent_path/mac/configs/.p10k.zsh ~/.zshrc
 
+## Vimrc
+rm ~/.vimrc 2> /dev/null || true
+cp $parent_path/mac/configs/.vimrc ~/.vimrc
+
 ## ~/.inputrc #
 rm ~/.inputrc 2> /dev/null || true
 cp $parent_path/mac/configs/.inputrc ~/.inputrc
