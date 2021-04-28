@@ -33,8 +33,10 @@ fi
 # Zsh (note: OhMyZsh is installed in the config install)
 install_brew_app zsh
 ## Powerlevel10k Zsh Theme ##
-brew install romkatv/powerlevel10k/powerlevel10k
-brew install zsh-syntax-highlighting
+install_brew_app romkatv/powerlevel10k/powerlevel10k
+install_brew_app zsh-syntax-highlighting
+
+install_brew_app docker
 
 # Download from webpage
 install_cask_app google-chrome
@@ -56,13 +58,14 @@ install_cask_app slack
 install_cask_app visual-studio-code
 install_cask_app webex-meetings
 install_cask_app xmind-zen
-install_cask_app zoomus
+# install_cask_app zoomus
+install_cask_app docker
 
 # For the M1 using a drastic amount of SSD for page swapping
 # brew install smartmontools && sudo smartctl --all /dev/disk0
 
 # App store installations
 # Xnip (Screenshot)
-# Mini Calendar (Calendar in menu bar)
+# Itsycal (Calendar in menu bar)
 # CopyClip (Clipboard history)
 # Paste (Better clipboard history)
