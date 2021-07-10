@@ -31,24 +31,24 @@ sed -i '' 's|^plugins.*$|plugins=(git vi-mode)|g' ~/.zshrc
 # Silence/mute errors
 # Continues execution if ~/.zshrc is not found
 rm ~/.zshrc 2> /dev/null || true
-cp $parent_path/mac/configs/.zshrc ~/.zshrc
+ln $parent_path/mac/configs/.zshrc ~/.zshrc
 
 ## Zsh theme settings (aka powerlevel10k)
 rm ~/.p10k.zsh 2> /dev/null || true
-cp $parent_path/mac/configs/.p10k.zsh ~/.zshrc
+ln $parent_path/mac/configs/.p10k.zsh ~/.zshrc
 
 ## Vimrc
 rm ~/.vimrc 2> /dev/null || true
-cp $parent_path/mac/configs/.vimrc ~/.vimrc
+ln $parent_path/mac/configs/.vimrc ~/.vimrc
 
 ## ~/.inputrc #
 rm ~/.inputrc 2> /dev/null || true
-cp $parent_path/mac/configs/.inputrc ~/.inputrc
+ln $parent_path/mac/configs/.inputrc ~/.inputrc
 
 ## ~/.gitconfig #
 rm ~/.gitconfig 2> /dev/null || true
-cp $parent_path/mac/configs/.gitconfig ~/.gitconfig
+ln $parent_path/mac/configs/.gitconfig ~/.gitconfig
 
 ## ~/Library/Colors/solarized.clr #
 rm ~/Library/Colors/solarized.clr 2> /dev/null || true
-cp $parent_path/mac/configs/solarized.clr ~/Library/Colors/solarized.clr
+ln $parent_path/mac/configs/solarized.clr ~/Library/Colors/solarized.clr
