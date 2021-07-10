@@ -137,7 +137,6 @@ export boardartuser=qif@boardwalk.corp
 export boardartkey=AKCp5e3VF1BxupuJnYxY8nrmqvC2vVBuvmiLRS8PikHT74Vkd33gT2Ta4JMTGCyat9EsSCD1k
 
 export SSH_KEY_NAME="board_rsa"
-#export PATH="/usr/local/opt/qt/bin:$PATH"
 ###############################################
 
 export PATH="/opt/homebrew/bin:$PATH"
