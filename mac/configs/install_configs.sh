@@ -35,15 +35,11 @@ ln $parent_path/mac/configs/.zshrc ~/.zshrc
 
 ## Zsh theme settings (aka powerlevel10k)
 rm ~/.p10k.zsh 2> /dev/null || true
-ln $parent_path/mac/configs/.p10k.zsh ~/.zshrc
+ln $parent_path/mac/configs/.p10k.zsh ~/.p10k.zsh
 
 ## Vimrc
 rm ~/.vimrc 2> /dev/null || true
 ln $parent_path/mac/configs/.vimrc ~/.vimrc
-
-## ~/.inputrc #
-rm ~/.inputrc 2> /dev/null || true
-ln $parent_path/mac/configs/.inputrc ~/.inputrc
 
 ## ~/.gitconfig #
 rm ~/.gitconfig 2> /dev/null || true
